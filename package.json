@@ -11,9 +11,12 @@
     "build": "run-s build:*",
     "build:clean": "del-cli dist/*.* !dist/.gitignore !dist/.git",
     "build:sass": "node-sass -r src/styles -o dist/styles",
-    "build:eleventy": "eleventy"
+    "build:eleventy": "eleventy",
 
-    
+    "deploy": "run-s build:*",
+    "deploy:git-add": "cd dist && git add --all",
+    "deploy:git-commit": "git commit -m \"Deploy on gh-pages updated\"",
+    "deploy:git-push": "git push origin gh-pages"
   },
   "repository": {
     "type": "git",
