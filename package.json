@@ -14,7 +14,7 @@
     "build:eleventy": "eleventy",
 
     "deploy": "run-s deploy:*",
-    "deploy:git-add": "cd dist && git add --all",
+    "deploy:git-add": "git add --all",
     "deploy:git-commit": "git commit -m \"Deploy on gh-pages updated\"",
     "deploy:git-push": "git push origin gh-pages"
   },
