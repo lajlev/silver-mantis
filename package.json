@@ -17,8 +17,7 @@
     "deploy:enter-to-folder": "cd dist",
     "deploy:git-add": "git add --all",
     "deploy:git-commit": "git commit -m \"Deploy on gh-pages updated\"",
-    "deploy:git-push": "git push origin gh-pages",
-    "deploy:leave-to-folder": "cd .."
+    "deploy:git-push": "git push origin gh-pages"
   },
   "repository": {
     "type": "git",
