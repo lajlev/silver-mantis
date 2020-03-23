@@ -7,10 +7,13 @@
     "serve": "run-p serve:*",
     "serve:eleventy": "eleventy --serve --quiet",
     "serve:sass": "npm run build:sass && node-sass -rw src/styles -o dist/styles",
+    
     "build": "run-s build:*",
-    "build:clean": "del-cli dist",
+    "build:clean": "del-cli dist/*.* !dist/.gitignore !dist/.git",
     "build:sass": "node-sass -r src/styles -o dist/styles",
     "build:eleventy": "eleventy"
+
+    
   },
   "repository": {
     "type": "git",
