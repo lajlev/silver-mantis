@@ -13,7 +13,7 @@ npm i
 npm run build
 ```
 
-## Optional: Deploy to github pages
+## Optional: Super easy deployment to github pages
 Method: Push dist folder to gh-pages branch
 
 

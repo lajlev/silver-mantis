@@ -12,14 +12,14 @@
     "build:clean": "del-cli dist/*.* !dist/.gitignore !dist/.git",
     "build:sass": "node-sass -r src/styles -o dist/styles",
     "build:eleventy": "eleventy",
-    "build:success": "echo \"\n ⚒️ ⚒️ ⚒️ Build \n\"",
+    "build:success": "echo \"\n⚒️  ⚒️  ⚒️  Eleventy & scss build  ⚒️  ⚒️  ⚒️\n\"",
 
     "deploy": "run-s deploy:* --silent",
     "deploy:enter-to-folder": "cd dist",
     "deploy:git-add": "git add --all",
     "deploy:git-commit": "git commit -m \"Deploy on gh-pages updated\"",
     "deploy:git-push": "git push origin gh-pages",
-    "deploy:success": "echo \"\n  🚀 🚀 🚀 Deployed to GH pages \n\""
+    "deploy:success": "echo \"\n🚀 🚀 🚀 Deployed to GH pages 🚀 🚀 🚀\n\""
   },
   "repository": {
     "type": "git",
