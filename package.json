@@ -7,13 +7,11 @@
     "serve": "run-p serve:*",
     "serve:eleventy": "eleventy --serve --quiet",
     "serve:sass": "npm run build:sass && node-sass -rw src/styles -o dist/styles",
-    
     "build": "run-s build:* --silent",
     "build:clean": "del-cli dist/*.* !dist/.gitignore !dist/.git",
     "build:sass": "node-sass -r src/styles -o dist/styles",
     "build:eleventy": "eleventy",
     "build:success": "echo \"\n⚒️  ⚒️  ⚒️  Eleventy & scss build  ⚒️  ⚒️  ⚒️\n\"",
-
     "deploy": "run-s deploy:* --silent",
     "deploy:enter-to-folder": "cd dist",
     "deploy:git-add": "git add --all",
@@ -40,6 +38,7 @@
   "homepage": "https://github.com/lajlev/11ty-sass-npm-template#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
+    "bulma": "^0.8.1",
     "del-cli": "^3.0.0",
     "node-sass": "^4.13.1",
     "npm-run-all": "^4.1.5"

@@ -1,3 +1,25 @@
-body {
-  background: #fc0;
+@charset "utf-8";
+
+// Customization
+@import "../../node_modules/bulma/sass/utilities/initial-variables";
+$body-size: 20px;
+$family-sans-serif: "Helvetica", "Arial", sans-serif;
+
+@import "../../node_modules/bulma/bulma";
+
+html {
+  
+  @include until($desktop) {
+    font-size: 16px;
+  }
 }
+
+ul.is-unstyled {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+    
